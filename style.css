@@ -1,0 +1,125 @@
+/* Scatterplot */
+.point {
+  fill: #273469;
+}
+
+h1 {
+  font-size: 100px;
+  font-style: normal;
+  line-height: 0;
+}
+
+h3 {
+  font-size: 30px;
+  font-style: italic;
+  font-family: Hei;
+  font-kerning: auto;
+  line-height: 0;
+}
+
+.tick {
+  font-family: Hei;
+}
+
+.axis-title {
+  font-family: "Times New Roman";
+}
+
+.bar {
+  opacity: 0.7;
+}
+
+.bar:hover {
+  stroke: #111;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+/* .bar:active {
+  stroke: #111;
+  stroke-width: 3px;
+  opacity: 1;
+} */
+
+.bar.active {
+  stroke: #000000;
+  stroke-width: 3px;
+  opacity: 1;
+}
+
+.point:hover {
+  stroke: #8325f5;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+/* Y-Axis Title */
+.y-title {
+  transform: rotate(90deg);
+}
+
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 10px;
+  font-weight: 200;
+  padding: 8px;
+  min-width: 100px;
+  color: #333;
+}
+
+.tooltip-title {
+  color: #000;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.histogram {
+  fill: #008c45;
+}
+
+.neighbourhoods {
+  /*fill: #f6f6f6;*/
+  stroke: #2d2d2d;
+}
+
+.neighbourhoods:active {
+  stroke: #cd212a;
+  stroke-width: 5px;
+}
+
+.neighbourhoods:hover {
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+
+/* https://www.w3schools.com/howto/howto_js_rangeslider.asp used as a basis for the slider design*/
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 300px; /* Full-width */
+  height: 4px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: #333333 1px;
+  opacity: 0.7;
+  -webkit-transition: .3s;
+  transition: opacity .3s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #008c44;
+  cursor: pointer;
+}
