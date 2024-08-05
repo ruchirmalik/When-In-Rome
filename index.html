@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>When In Rome</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<body>
+    <h1>WHEN IN ROME</h1>
+    <h3 style="position: absolute; left: 22px; top: 85px">An exploration of Rome's airbnbs</h3>
+
+    <div style="position: absolute; left: 805px; top: 110px">
+        <label for="radius-slider">Rating: <span id="radius-value">5 or less</span></label>
+        <input type="range" min="1" value="5" max="5" id="radius-slider", class="slider">
+    </div>
+
+    <h3>&nbsp;</h3>
+
+    <div id="tooltip"></div>
+
+    <div class="container" style="width:1470px;" >
+        <svg id="vis"></svg>
+        <svg id="vis2"></svg>
+        <div style="position: absolute; left: 400px; top: 410px">
+            <svg id="citymap"></svg>
+        </div>
+
+    </div>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/topojson.v3.js"></script>
+
+    <!-- Our JS code -->
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/barchart.js"></script>
+</body>
+
+</html>
